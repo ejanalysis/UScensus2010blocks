@@ -12,4 +12,5 @@
 #'    #data(blocks.fips); data('blocks.pop'); data('blocks.lat'); data(blocks.lon); data(blocks.area); data(blocks.urban)
 #'    #  blocks=data.frame(fips=blocks.fips, pop=blocks.pop, lat=blocks.lat, lon=blocks.lon, area=blocks.area, urban=blocks.urban)
 #'    #  rm(blocks.fips, blocks.pop, blocks.lat, blocks.lon, blocks.area, blocks.urban); gc()
+#'    #  by(1e6 * blocks$pop / blocks$area, INDICES=blocks$urban, FUN=mean)
 NULL
