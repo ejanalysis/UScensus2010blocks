@@ -7,5 +7,9 @@
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data.
 #'   All States/DC are compiled into a single vector for each field (e.g. pop).
 #'   @examples
-#'    #data('blocks.pop'); data(blocks.fips); blocks=data.frame(fips=blocks.fips, pop=blocks.pop)
+#'    #data(blocks.fips); data('blocks.pop'); blocks=data.frame(fips=blocks.fips, pop=blocks.pop)
+#'    # For all the fields:
+#'    #data(blocks.fips); data('blocks.pop'); data('blocks.lat'); data(blocks.lon); data(blocks.area); data(blocks.urban)
+#'    #  blocks=data.frame(fips=blocks.fips, pop=blocks.pop, lat=blocks.lat, lon=blocks.lon, area=blocks.area, urban=blocks.urban)
+#'    #  rm(blocks.fips, blocks.pop, blocks.lat, blocks.lon, blocks.area, blocks.urban); gc()
 NULL
