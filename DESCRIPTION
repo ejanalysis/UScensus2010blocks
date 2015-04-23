@@ -1,0 +1,11 @@
+Package: UScensus2010blocks
+Type: Package
+Title: USA Census Bureau 2010 block-level data (pop, area, urban, lat/lon)
+Version: 0.1
+Date: 2015-04-18
+Author: ejanalyst
+Maintainer: info@ejanalysis.com <info@ejanalysis.com>
+Description: The entire set of over 11 million Census blocks in the United States of America as a single data.frame,
+  with just population count, FIPS code, latitude and longitude, area (size), and whether the block is urban.
+License: None
+LazyData: TRUE
