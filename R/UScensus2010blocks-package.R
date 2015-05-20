@@ -6,6 +6,9 @@
 #'   These datasets provide population count, size of block (area), latitude and longitude of internal point,
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data.
 #'   All States/DC are compiled into a single vector for each field (e.g. pop).
+#' @references 
+#' \code{\link{http://ejanalysis.github.io}} \cr
+#' \code{\link{http://www.ejanalysis.com/}} \cr
 #'   @examples
 #'    #data(blocks.fips); data('blocks.pop'); blocks=data.frame(fips=blocks.fips, pop=blocks.pop)
 #'    # For all the fields:
