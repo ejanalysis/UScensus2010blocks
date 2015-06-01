@@ -5,7 +5,7 @@
 \alias{blocks}
 \alias{blocks.pop}
 \alias{pop}
-\title{fips: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
+\title{pop: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
 \format{A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
 \itemize{
  \item   [1] "fips"  (numeric - can be converted to character with leading zeroes via lead.zeroes(blocks$fips, 15)
@@ -21,7 +21,9 @@
   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 }
 \usage{
-#data('blocks.pop')
+blocks <- get.blocks()
+  # or to load into memory just this one vector:
+  data(blocks.pop)
 }
 \description{
 These data sets provide population count, size of block (area), latitude and longitude of internal point,

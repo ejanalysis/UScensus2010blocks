@@ -8,11 +8,30 @@
 #'   which uses more RAM and takes much longer -- It can take 1-2 minutes for this function to return results unless charfips=FALSE.
 #' @return Returns a (large, >11 million rows) dataframe that has specified fields
 #'   or by default these 6 columns: fips, pop, lat, lon, area, urban
-#' @seealso \code{\link{blocks.fips}}
+#' @seealso \code{\link{blocks.fips}}  and \pkg{UScensus2010}
 #' @concept demographics
 #' @examples
-#' # blocks <- get.blocks()
-#' # blocks <- get.blocks(c('fips','pop'))
+#' \dontrun{
+#' # To assemble blocks data.frame:
+#' # 1) Much faster if charfips=FALSE, but then cannot treat fips as character with leading zeroes where needed:
+#' blocks <- get.blocks( charfips=FALSE )
+#' # To convert numeric to character fips later:
+#' blocks$fips <- lead.zeroes(blocks$fips, 15)
+#' # 2) Slower way, but can get fips as character to begin with:
+#' blocks <- get.blocks()
+#' # To get just certain fields:
+#' blocks <- get.blocks(c('fips','pop'))
+#' # This function using defaults is the equivalent of the following:
+#' #   require(UScensus2010blocks)
+#' #   blocks <- data.frame(
+#' #     fips=lead.zeroes(blocks.fips,15),
+#' #     pop=blocks.pop,
+#' #     lat=blocks.lat,
+#' #     lon=blocks.lon,
+#' #     area=blocks.area,
+#' #     urban=blocks.urban
+#' #   )
+#' }
 #' @export
 get.blocks <- function(fields=c('fips', 'pop', 'lat', 'lon', 'area', 'urban'), charfips=TRUE) {
   validcolnames <- c('fips', 'pop', 'lat', 'lon', 'area', 'urban')
@@ -47,13 +66,4 @@ get.blocks <- function(fields=c('fips', 'pop', 'lat', 'lon', 'area', 'urban'), c
     }
   }
   return(blocks)
-  #   blocks <- data.frame(
-  #     fips=lead.zeroes(blocks.fips,15),
-  #     pop=blocks.pop,
-  #     lat=blocks.lat,
-  #     lon=blocks.lon,
-  #     area=blocks.area,
-  #     urban=blocks.urban
-  #   )
-  #rm(blocks.fips, blocks.pop, blocks.lat, blocks.lon, blocks.area, blocks.urban); gc()
 }

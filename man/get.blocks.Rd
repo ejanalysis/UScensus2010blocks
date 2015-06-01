@@ -26,11 +26,30 @@ Warning: It can take 1-2 minutes for this function to return results with defaul
   The blocks data.frame with just numeric fips and pop uses only about 133 MB and is
 }
 \examples{
-# blocks <- get.blocks()
-# blocks <- get.blocks(c('fips','pop'))
+\dontrun{
+# To assemble blocks data.frame:
+# 1) Much faster if charfips=FALSE, but then cannot treat fips as character with leading zeroes where needed:
+blocks <- get.blocks( charfips=FALSE )
+# To convert numeric to character fips later:
+blocks$fips <- lead.zeroes(blocks$fips, 15)
+# 2) Slower way, but can get fips as character to begin with:
+blocks <- get.blocks()
+# To get just certain fields:
+blocks <- get.blocks(c('fips','pop'))
+# This function using defaults is the equivalent of the following:
+#   require(UScensus2010blocks)
+#   blocks <- data.frame(
+#     fips=lead.zeroes(blocks.fips,15),
+#     pop=blocks.pop,
+#     lat=blocks.lat,
+#     lon=blocks.lon,
+#     area=blocks.area,
+#     urban=blocks.urban
+#   )
+}
 }
 \seealso{
-\code{\link{blocks.fips}}
+\code{\link{blocks.fips}}  and \pkg{UScensus2010}
 }
 \concept{
 demographics

@@ -1,12 +1,15 @@
 #' @name blocks.urban
 #' @docType data
 #' @aliases blocks urban
-#' @title fips: Over 11 million Census Bureau 2010 block-level values in a single data.frame
+#' @title urban: Over 11 million Census Bureau 2010 block-level values in a single data.frame
 #' @description These data sets provide population count, size of block (area), latitude and longitude of internal point,
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data,
 #'   each of these fields as a single data file (RData), all sorted in the same order, enabling quick combination into a data.frame.
 #'   All States/DC are compiled into a single data.frame.
-#' @usage #data('blocks.urban')
+#' @usage
+#'   blocks <- get.blocks()
+#'   # or to load into memory just this one vector:
+#'   data(blocks.urban)
 #' @source 2010 Census from Census Bureau \url{http://www.census.gov}
 #'   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code.
 #'   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.

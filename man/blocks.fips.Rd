@@ -22,7 +22,9 @@
   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 }
 \usage{
-#data('blocks.fips')
+blocks <- get.blocks()
+  # or to load into memory just this one vector:
+  data(blocks.fips)
 }
 \description{
 These data sets provide population count, size of block (area), latitude and longitude of internal point,
