@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Uscensus2010blocks package</title>
+    <title>UScensus2010blocks package</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Uscensus2010blocks package</h1>
+      <h1 class="project-name">UScensus2010blocks package</h1>
       <h2 class="project-tagline">Data on 11 million Census blocks - pop, lat/lon, area, urban</h2>
       <a href="https://github.com/ejanalysis/UScensus2010blocks" class="btn">View on GitHub</a>
       <a href="https://github.com/ejanalysis/UScensus2010blocks/zipball/master" class="btn">Download .zip</a>
@@ -19,12 +19,26 @@
     </section>
 
     <section class="main-content">
-      <h3>
+
+<h3>
 <a id="about-this-package" class="anchor" href="#about-this-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this Package</h3>
 
-<p>I developed this package in 2015 as a way to give R users easier access to some of the Census Bureau's Census 2010 data on Census blocks. Typically the Census block data have to be downloaded one state at a time, in huge files. This package provides the following data on 11 million Census blocks: pop, lat/lon, area, urban. Each field (e.g., pop contains population counts) is stored as a vector in one RData file for the entire USA's 11 million plus blocks. These can be quickly compiled into a single data.frame that has over 11 million rows and one column per field. The fields are FIPS code (fips), population count (pop), latitude (lat), longitude (lon), physical size (area), and urban vs rural code (urban).</p>
+<p>I developed this package in 2015 as a way to give R users easier access to some of the United States Census Bureau's Census 2010 data on Census blocks. Typically the Census block data have to be downloaded one state at a time, in huge files. This package provides the following data on 11 million Census blocks: pop, lat/lon, area, urban. Each field (e.g., pop contains population counts) is stored as a vector in one RData file for the entire USA's 11 million plus blocks. These can be quickly compiled into a single data.frame that has over 11 million rows and one column per field. The fields are FIPS code (fips), population count (pop), latitude (lat), longitude (lon), physical size (area), and urban vs rural code (urban).</p>
 
 <p><a href="http://ejanalysis.github.io/UScensus2010blocks/UScensus2010blocks.pdf">Help documentation as pdf</a></p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation and Related Packages</h3>
+
+<p>This and related packages, once each is made available as a public repository on GitHub, until available on cran, can be installed using the devtools package: </p>
+
+<div class="highlight highlight-r"><pre><span class="pl-k">if</span> (<span class="pl-k">!</span>require(<span class="pl-s"><span class="pl-pds">'</span>devtools<span class="pl-pds">'</span></span>)) install.packages(<span class="pl-s"><span class="pl-pds">'</span>devtools<span class="pl-pds">'</span></span>)
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/analyze.stuff<span class="pl-pds">"</span></span>)
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/countyhealthrankings<span class="pl-pds">"</span></span>)
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/UScensus2010blocks<span class="pl-pds">"</span></span>)
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/ACSdownload<span class="pl-pds">"</span></span>)
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(c(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/proxistat<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>ejanalysis/ejanalysis<span class="pl-pds">"</span></span>))
+<span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>ejanalysis/ejscreen<span class="pl-pds">"</span></span>)</pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ejanalysis/UScensus2010blocks">Uscensus2010blocks</a> is maintained as part of a group of <a href="http://ejanalysis.github.io">packages related to EJ analysis</a>, by <a href="https://github.com/ejanalysis" class="user-mention">@ejanalysis</a>.</span>
