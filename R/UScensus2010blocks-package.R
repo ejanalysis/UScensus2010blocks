@@ -7,8 +7,8 @@
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data.
 #'   All States/DC are compiled into a single vector for each field (e.g. pop).
 #' @references
-#' \code{\link{http://ejanalysis.github.io}} \cr
-#' \code{\link{http://www.ejanalysis.com/}} \cr
+#' \url{http://ejanalysis.github.io} \cr
+#' \url{http://www.ejanalysis.com/} \cr
 #' @examples
 #'  \dontrun{
 #'    blocks <- get.blocks(charfips=FALSE)
