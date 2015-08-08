@@ -12,14 +12,14 @@
 #'   data(blocks.pop)
 #' @source 2010 Census from Census Bureau \url{http://www.census.gov}
 #'   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code. \cr
-#'   \cr 
-#'   Population was obtained from files such as tabblock2010_01_pophu.dbf from within
-#'   http://www2.census.gov/geo/tiger/TIGER2010BLKPOPHU/tabblock2010_01_pophu.zip  
+#'   \cr
+#'   Population was obtained from files such as tabblock2010_01_pophu.dbf from within \cr
+#'   http://www2.census.gov/geo/tiger/TIGER2010BLKPOPHU/tabblock2010_01_pophu.zip \cr
 #'   as linked from here: \url{http://www.census.gov/geo/maps-data/data/tiger-line.html}  \cr
 #'   \cr
 #'   See \url{http://www.census.gov/geo/maps-data/data/tiger.html} for various related data products.
 #'   See \url{http://tigerweb.geo.census.gov/tigerwebmain/TIGERweb_county_based_files.html} for html formatted versions.
-#'   The data in this package is based on those TIGER files 
+#'   The data in this package is based on those TIGER files
 #'   slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 #' @seealso See \code{\link{get.blocks}} in \pkg{UScensus2010blocks} to assemble this and other fields into a blocks data.frame.
 #'   See the \code{\link{UScensus2010}} package and related datasets, some of which are on CRAN and others only here: \url{http://lakshmi.calit2.uci.edu/census2000/}

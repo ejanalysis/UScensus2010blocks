@@ -19,8 +19,8 @@
 2010 Census from Census Bureau \url{http://www.census.gov}
   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code. \cr
   \cr
-  Population was obtained from files such as tabblock2010_01_pophu.dbf from within
-  http://www2.census.gov/geo/tiger/TIGER2010BLKPOPHU/tabblock2010_01_pophu.zip
+  Population was obtained from files such as tabblock2010_01_pophu.dbf from within \cr
+  http://www2.census.gov/geo/tiger/TIGER2010BLKPOPHU/tabblock2010_01_pophu.zip \cr
   as linked from here: \url{http://www.census.gov/geo/maps-data/data/tiger-line.html}  \cr
   \cr
   See \url{http://www.census.gov/geo/maps-data/data/tiger.html} for various related data products.

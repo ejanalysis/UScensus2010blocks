@@ -28,7 +28,8 @@ Warning: It can take 1-2 minutes for this function to return results with defaul
 \examples{
 \dontrun{
 # To assemble blocks data.frame:
-# 1) Much faster if charfips=FALSE, but then cannot treat fips as character with leading zeroes where needed:
+# 1) Much faster if charfips=FALSE, but
+#    then cannot treat fips as character with leading zeroes where needed:
 blocks <- get.blocks( charfips=FALSE )
 # To convert numeric to character fips later:
 blocks$fips <- lead.zeroes(blocks$fips, 15)
