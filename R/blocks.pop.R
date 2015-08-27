@@ -20,7 +20,7 @@
 #'   The data in this package is based on those TIGER files
 #'   slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 #' @seealso See \code{\link{get.blocks}} in \pkg{UScensus2010blocks} to assemble this and other fields into a blocks data.frame.
-#'   See the \code{\link{UScensus2010}} package and related datasets, some of which are on CRAN and others only here: \url{http://lakshmi.calit2.uci.edu/census2000/}
+#'   See the \code{\link[UScensus2010]{UScensus2010}} package and related datasets, some of which are on CRAN and others only here: \url{http://lakshmi.calit2.uci.edu/census2000/}
 #'   but note that package provides spatial data in a single file per State,
 #'   while this package provides non-spatial data (just lat/lon) that can quickly be assembled into a single large data.frame.
 #' @keywords datasets

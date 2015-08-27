@@ -50,7 +50,7 @@ blocks <- get.blocks(c('fips','pop'))
 }
 }
 \seealso{
-\code{\link{blocks.fips}}  and \pkg{UScensus2010}
+\code{\link{blocks.fips}}  and \code{\link[UScensus2010]{UScensus2010}}
 }
 \concept{
 demographics

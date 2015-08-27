@@ -1,15 +1,24 @@
-# to get calculated variable like pctmin from delaware.blk10, or other data 
-# from package called UScensus2010blk
-# rather than from UScensus2010blocks package
-
-getpctmin <- function(x) {with(x@data, ifelse(P0010001>0, 1 - (P0050003 / P0010001), 0 ) ) }
-
-# e.g., 
-if (1==0) {
-  require(UScensus2010)
-  install.blk("osx")
-  data("delaware.blk10")
-  pctmin <- getpctmin(delaware.blk10)
-  hist(pctmin, 100)
-  
+#' @title Example of Calculating Percent Minority if Raw Counts Available
+#' @description This is only an example & only useful if you already have x data in the proper format,
+#'   as from \code{\link[UScensus2010]{UScensus2010}}.
+#'   It is a simple example of calculating a derived variable from raw counts if those have been obtained.
+#' @param x Dataset of blocks data that must be in data within x and must have fields P0050003 and P0010001
+#' @return Would be a vector as long as P0010001
+#' @seealso \code{\link[UScensus2010]{UScensus2010}}
+#' @examples
+#' # Example of how to get calculated variable like pctmin from delaware.blk10, or other data
+#' # from package called UScensus2010blk
+#' # (not from this UScensus2010blocks package):
+#' \donotrun{
+#'    require(UScensus2010)
+#'    install.blk("osx")  # if on OSX
+#'    data("delaware.blk10")
+#'    x=delaware.blk10
+#'    #  pctmin <- getpctmin(x)
+#'    # hist(pctmin, 100)
+#' }
+#' @export
+getpctmin <- function(x) {
+  print('Function should be this:')
+  print('with(x@data, ifelse(P0010001>0, 1 - (P0050003 / P0010001), 0 ) )')
 }

@@ -8,7 +8,7 @@
 #'   which uses more RAM and takes much longer -- It can take 1-2 minutes for this function to return results unless charfips=FALSE.
 #' @return Returns a (large, >11 million rows) dataframe that has specified fields
 #'   or by default these 6 columns: fips, pop, lat, lon, area, urban
-#' @seealso \code{\link{blocks.fips}}  and \pkg{UScensus2010}
+#' @seealso \code{\link{blocks.fips}}  and \code{\link[UScensus2010]{UScensus2010}}
 #' @concept demographics
 #' @examples
 #' \dontrun{
