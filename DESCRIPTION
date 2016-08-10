@@ -5,11 +5,11 @@ Version: 0.2.0
 Date: 2015-05-29
 Author: ejanalyst
 Maintainer: info@ejanalysis.com <info@ejanalysis.com>
-Description: The entire set of over 11 million Census blocks in the United States of America
-  as a single data.frame, with just population count, FIPS code, latitude and longitude,
-  area (size), and whether the block is urban.
+Description: The entire set of over 11 million Census blocks in the United
+    States of America as a single data.frame, with just population count, FIPS code,
+    latitude and longitude, area (size), and whether the block is urban.
 License: None
-URL:
-  http://ejanalysis.github.io
-  http://www.ejanalysis.com/
+URL: http://ejanalysis.github.io
+    http://www.ejanalysis.com/
 LazyData: TRUE
+RoxygenNote: 5.0.1
