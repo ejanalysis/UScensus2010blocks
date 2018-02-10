@@ -55,4 +55,3 @@ blocks <- get.blocks(c('fips','pop'))
 \concept{
 demographics
 }
-

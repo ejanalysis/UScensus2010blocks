@@ -2,8 +2,8 @@
 % Please edit documentation in R/UScensus2010blocks-package.R
 \docType{package}
 \name{UScensus2010blocks-package}
-\alias{UScensus2010blocks}
 \alias{UScensus2010blocks-package}
+\alias{UScensus2010blocks}
 \alias{blocks}
 \title{Census 2010 Data for all US Blocks (pop, area, urban, lat/lon)}
 \description{
@@ -24,4 +24,3 @@ The entire set of over 11 million Census blocks in the United States of America
 \seealso{
 \code{\link[UScensus2010]{UScensus2010}} package and related datasets, some of which are on CRAN and others only here: \url{http://lakshmi.calit2.uci.edu/census2000/}
 }
-

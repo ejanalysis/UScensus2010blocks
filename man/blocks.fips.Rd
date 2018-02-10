@@ -2,10 +2,10 @@
 % Please edit documentation in R/blocks.fips.R
 \docType{data}
 \name{blocks.fips}
-\alias{FIPS}
-\alias{blocks}
 \alias{blocks.fips}
+\alias{blocks}
 \alias{fips}
+\alias{FIPS}
 \title{fips: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
 \format{A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
 \itemize{
@@ -39,4 +39,3 @@ See \code{\link{get.blocks}} in \pkg{UScensus2010blocks} to assemble this and ot
   while this package provides non-spatial data (just lat/lon) that can quickly be assembled into a single large data.frame.
 }
 \keyword{datasets}
-

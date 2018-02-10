@@ -2,8 +2,8 @@
 % Please edit documentation in R/blocks.lat.R
 \docType{data}
 \name{blocks.lat}
-\alias{blocks}
 \alias{blocks.lat}
+\alias{blocks}
 \alias{lat}
 \alias{latitude}
 \title{lat: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
@@ -39,4 +39,3 @@ See \code{\link{get.blocks}} in \pkg{UScensus2010blocks} to assemble this and ot
   while this package provides non-spatial data (just lat/lon) that can quickly be assembled into a single large data.frame.
 }
 \keyword{datasets}
-

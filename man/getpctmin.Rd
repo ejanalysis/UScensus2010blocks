@@ -33,4 +33,3 @@ This is only an example & only useful if you already have x data in the proper f
 \seealso{
 \code{\link[UScensus2010]{UScensus2010}}
 }
-
