@@ -20,16 +20,14 @@
   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code.
   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 }
-\usage{
-blocks <- get.blocks()
-  # or to load into memory just this one vector:
-  data(blocks.urban)
-}
 \description{
 These data sets provide population count, size of block (area), latitude and longitude of internal point,
   whether the block is urban, for each US block, based on Census Bureau Census 2010 data,
   each of these fields as a single data file (RData), all sorted in the same order, enabling quick combination into a data.frame.
   All States/DC are compiled into a single data.frame.
+}
+\details{
+This will work: \code{blocks <- get.blocks()} or this: \code{data(blocks.area)}
 }
 \seealso{
 See \code{\link{get.blocks}} in \pkg{UScensus2010blocks} to assemble this and other fields into a blocks data.frame.

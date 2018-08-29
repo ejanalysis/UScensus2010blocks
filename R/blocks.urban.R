@@ -6,10 +6,7 @@
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data,
 #'   each of these fields as a single data file (RData), all sorted in the same order, enabling quick combination into a data.frame.
 #'   All States/DC are compiled into a single data.frame.
-#' @usage
-#'   blocks <- get.blocks()
-#'   # or to load into memory just this one vector:
-#'   data(blocks.urban)
+#' @details This will work: \code{blocks <- get.blocks()} or this: \code{data(blocks.area)}
 #' @source 2010 Census from Census Bureau \url{http://www.census.gov}
 #'   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code.
 #'   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
