@@ -4,8 +4,10 @@
 \alias{get.blocks}
 \title{Get data.frame with data on all US Census 2010 blocks (pop, lat/lon, etc.)}
 \usage{
-get.blocks(fields = c("fips", "pop", "lat", "lon", "area", "urban"),
-  charfips = TRUE)
+get.blocks(
+  fields = c("fips", "pop", "lat", "lon", "area", "urban"),
+  charfips = TRUE
+)
 }
 \arguments{
 \item{fields}{Optional vector of character elements specifying which fields to return.}

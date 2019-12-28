@@ -9,7 +9,7 @@
 #' # Example of how to get calculated variable like pctmin from delaware.blk10, or other data
 #' # from package called UScensus2010blk
 #' # (not from this UScensus2010blocks package):
-#' \donotrun{
+#' \dontrun{
 #'    require(UScensus2010)
 #'    install.blk("osx")  # if on OSX
 #'    data("delaware.blk10")
