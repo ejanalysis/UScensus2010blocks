@@ -1,7 +1,7 @@
 #' @name blocks.lon
 #' @docType data
 #' @aliases blocks lon longitude
-#' @title lon: Over 11 million Census Bureau 2010 block-level values in a single data.frame
+#' @title lon: Over 11 million Census Bureau 2010 block-level values
 #' @description These data sets provide population count, size of block (area), latitude and longitude of internal point,
 #'   whether the block is urban, for each US block, based on Census Bureau Census 2010 data,
 #'   each of these fields as a single data file (RData), all sorted in the same order, enabling quick combination into a data.frame.

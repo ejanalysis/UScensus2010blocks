@@ -25,7 +25,7 @@
 #' # This function using defaults is the equivalent of the following:
 #' #   require(UScensus2010blocks)
 #' #   blocks <- data.frame(
-#' #     fips=lead.zeroes(blocks.fips,15),
+#' #     fips = analyze.stuff::lead.zeroes(blocks.fips,15),
 #' #     pop=blocks.pop,
 #' #     lat=blocks.lat,
 #' #     lon=blocks.lon,
@@ -63,7 +63,7 @@ get.blocks <- function(fields=c('fips', 'pop', 'lat', 'lon', 'area', 'urban'), c
   if ('fips' %in% fields) {
     if (charfips) {
       cat("Converting fips to character with leading zero...")
-      blocks$fips <- lead.zeroes(blocks$fips, 15)
+      blocks$fips <- analyze.stuff::lead.zeroes(blocks$fips, 15)
     }
   }
   return(blocks)

@@ -7,7 +7,8 @@
 \alias{fips}
 \alias{FIPS}
 \title{fips: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
-\format{A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
+\format{
+A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
 \itemize{
  \item   [1] "fips"  (numeric - can be converted to character with leading zeroes via lead.zeroes(blocks$fips, 15)
  \item   [2] "pop"  (integer) - Population count in Census 2010
@@ -15,7 +16,8 @@
  \item   [4] "lat" (numeric) - decimal degrees
  \item   [5] "lon" (numeric) - decimal degrees
  \item   [6] "area" (numeric) - units?  Need to check. ****
-}}
+}
+}
 \source{
 2010 Census from Census Bureau \url{http://www.census.gov}
   obtained 2014/2015 compiled from multiple Census files of State-level population, area, internal point, or urban code.
