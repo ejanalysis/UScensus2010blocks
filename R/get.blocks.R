@@ -1,12 +1,13 @@
-#' @title Get data.frame with data on all US Census 2010 blocks (pop, lat/lon, etc.)
+#' @title Get data on all US Census 2010 blocks (pop, lat/lon, area, etc.)
 #' @description Returns a large dataframe with one row per block. This helps assemble the desired fields for all 11m+ blocks, into a single data.frame.
-#' @details Warning: It can take 1-2 minutes for this function to return results with default settings (i.e., unless charfips=FALSE is specified).
+#' @details The area is in units of square meters.
+#'    Warning: It can take 1-2 minutes for this function to return results with default settings (i.e., unless charfips=FALSE is specified).
 #'   The full blocks data.frame created by default uses approximately 1 GB of RAM.
 #'   The blocks data.frame with just numeric fips and pop uses only about 133 MB and is
 #' @param fields Optional vector of character elements specifying which fields to return.
 #' @param charfips Optional TRUE by default, specifies if FIPS should be converted to character class with any necessary leading zeroes,
 #'   which uses more RAM and takes much longer -- It can take 1-2 minutes for this function to return results unless charfips=FALSE.
-#' @return Returns a (large, >11 million rows) dataframe that has specified fields
+#' @return Returns a (large, >11 million rows) data.frame that has specified fields
 #'   or by default these 6 columns: fips, pop, lat, lon, area, urban
 #' @seealso \code{\link{blocks.fips}}  and \code{\link[UScensus2010]{UScensus2010}}
 #' @concept demographics
