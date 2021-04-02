@@ -6,7 +6,7 @@
 \alias{blocks}
 \alias{fips}
 \alias{FIPS}
-\title{fips: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
+\title{fips: Over 11 million Census Bureau 2010 block-level values}
 \format{
 A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
 \itemize{

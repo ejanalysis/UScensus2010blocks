@@ -19,7 +19,7 @@ Suggests:
 URL: http://ejanalysis.github.io, https://github.com/ejanalysis/UScensus2010blocks, http://www.ejanalysis.com/
 BugReports: https://github.com/ejanalysis/UScensus2010blocks/issues
 Depends: R (>= 3.1.0)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 License: CC-0
 Repository: GitHub
 Author: info@ejanalysis.com

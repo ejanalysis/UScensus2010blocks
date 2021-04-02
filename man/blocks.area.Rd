@@ -5,7 +5,7 @@
 \alias{blocks.area}
 \alias{blocks}
 \alias{area}
-\title{area: Over 11 million Census Bureau 2010 block-level values in a single data.frame}
+\title{area: Over 11 million Census Bureau 2010 block-level values}
 \format{
 A vector with 11078297 elements (Census 2010 blocks). If all the related datasets are compiled as a blocks data.frame, they provide the following:
 \itemize{
@@ -14,7 +14,7 @@ A vector with 11078297 elements (Census 2010 blocks). If all the related dataset
  \item   [3] "urban" (logical)
  \item   [4] "lat" (numeric) - decimal degrees
  \item   [5] "lon" (numeric) - decimal degrees
- \item   [6] "area" (numeric) - units?  Need to check. ****
+ \item   [6] "area" (numeric) - SQUARE METERS
 }
 }
 \source{
@@ -23,7 +23,9 @@ A vector with 11078297 elements (Census 2010 blocks). If all the related dataset
   Slightly modified to store FIPS as numeric field, pop as integer, and urban as logical, to save RAM.
 }
 \description{
-These data sets provide population count, size of block (area), latitude and longitude of internal point,
+These data sets provide population count, 
+  size of block (area in square meters), 
+  latitude and longitude of internal point,
   whether the block is urban, for each US block, based on Census Bureau Census 2010 data,
   each of these fields as a single data file (RData), all sorted in the same order, enabling quick combination into a data.frame.
   All States/DC are compiled into a single data.frame.
