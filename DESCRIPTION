@@ -1,5 +1,5 @@
 Package: UScensus2010blocks
-Title: Census 2010 Data For All US Blocks (pop, area, urban, lat/lon)
+Title: Census 2010 Data For All US Blocks (pop, area, urban, lat/lon) (for EJ analysis, etc.)
 Description: The entire set of over 11 million Census blocks in the United
     States of America as a single data.frame, with just 
     population count, FIPS code, latitude and longitude, area (size), 
