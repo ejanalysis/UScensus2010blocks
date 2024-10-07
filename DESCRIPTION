@@ -4,7 +4,6 @@ Description: The entire set of over 11 million Census blocks in the United
     States of America as a single data.frame, with just 
     population count, FIPS code, latitude and longitude, area (size), 
     and if block is urban.
-    For any imported/suggested packages not on CRAN, see http://ejanalysis.github.io
 Version: 1.0.0
 Date: 2020-01-01
 Imports: 
@@ -16,8 +15,7 @@ Imports:
 Suggests:
     ejanalysis,
     proxistat
-URL: http://ejanalysis.github.io, https://github.com/ejanalysis/UScensus2010blocks, http://www.ejanalysis.com/
-BugReports: https://github.com/ejanalysis/UScensus2010blocks/issues
+URL: https://github.com/ejanalysis/UScensus2010blocks
 Depends: R (>= 3.1.0)
 RoxygenNote: 7.1.2
 License: CC-0
